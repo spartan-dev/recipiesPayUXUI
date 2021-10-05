@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main role="main">
+      <div>
+        <nav>
+          <a href="https://www.google.com">Tacos</a> |
+          <a href="/css/">Tortas</a> | <a href="/js/">Pizza</a> |
+          <a href="/python/">Chistoretes</a>
+        </nav>
+
+        <h1>Este seria la parte principal de nuestra web</h1>
+        <!-- self closing tags  autocerrado-->
+        <img
+          src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d3ec0805d0ff1458b9b3ff0c07148178.png"
+        />
+      </div>
+    </main>
+    <!-- section de diferencias en em i -->
+    <section>
+      <p>
+        este texto contiene la tag de
+        <i style="background-color: yellow">soy un texto con enfasis</i>
+        y al parecer no cambian mucho uno del otro texto
+        <em style="background-color: greenyellow"
+          >pero cuidado!! este podria ser diferente</em
+        >
+      </p>
+
+      <p>
+        otro ejemplo de enfasis seria el strong
+        <strong>Fuerte como martillo</strong>
+      </p>
+    </section>
+    <!-- explicacion de inline && block -->
+    <section>
+      <h3>La seccion de los bloques && inline (en linea)</h3>
+      <div style="background-color: red">
+        I'm a block! I take up 100% width unless told otherwise
+      </div>
+      <div>I'm a block! I take up 100% width unless told otherwise</div>
+      <span style="background-color: aqua">Yo soy otro span</span
+      ><span style="background-color: magenta"></span>
+      And i'm just an inline element sandwiched
+      <div>I'm a block! I take up 100% width unless told otherwise</div>
+      <span>I'm inline! I flow like text</span>
+
+      See, no line break!
+
+      <span>...even if multiple spans are present</span>
+    </section>
+    <!-- Inline Section -->
+    <section>
+      <div>
+        <h2 style="background-color: green">Inline Secction</h2>
+        <div>
+          <label for="file">File progress:</label>
+          <progress id="file" max="100" value="70">70%</progress>
+        </div>
+      </div>
+      <div>
+        <p>
+          My favorite color is <del>blue</del> <ins>red este va subryado</ins>!
+        </p>
+      </div>
+      <div>
+        <h3>La tag de cita</h3>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/The_Scream_by_Edvard_Munch%2C_1893_-_Nasjonalgalleriet.png/1200px-The_Scream_by_Edvard_Munch%2C_1893_-_Nasjonalgalleriet.png"
+          width="300"
+          height="600"
+          alt="The Scream pintura"
+        />
+        <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+      </div>
+      <div>
+        <video
+          src="./assets/videos/miVideo.mp4"
+          width="320"
+          height="240"
+          controls
+        >
+          <source media="(min-width: )" srcset="" />
+          <source media="(min-width: )" srcset="" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/HhcwdvcpQNo?autoplay=1&mute=1"
+          title="YouTube video player"
+          frameborder="1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.w3schools.com"
+          title="W3Schools Free Online Web Tutorials"
+        >
+        </iframe>
+      </div>
+    </section>
+    <!-- Block section -->
+    <section>
+      <div>
+        <h2 style="background-color: red">Block Section</h2>
+      </div>
+      <div>
+        <article>
+          <h2>Google Chrome</h2>
+          <p>
+            Google Chrome is a web browser developed by Google, released in
+            2008. Chrome is the world's most popular web browser today!
+          </p>
+          <a href="/blog">link al blog</a>
+        </article>
+
+        <article>
+          <h2>Mozilla Firefox</h2>
+          <p>
+            Mozilla Firefox is an open-source web browser developed by Mozilla.
+            Firefox has been the second most popular web browser since January,
+            2018.
+          </p>
+        </article>
+
+        <article>
+          <h2>Microsoft Edge</h2>
+          <p>
+            Microsoft Edge is a web browser developed by Microsoft, released in
+            2015. Microsoft Edge replaced Internet Explorer.
+          </p>
+        </article>
+        <aside
+          style="
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+          "
+        >
+          <h4>Epcot Center</h4>
+          <p>
+            Epcot is a theme park at Walt Disney World Resort featuring exciting
+            attractions, international pavilions, award-winning fireworks and
+            seasonal special events.
+          </p>
+        </aside>
+      </div>
+      <article>
+        <header>
+          <h1>Titulo del apartado</h1>
+          <p>posteado por Jhon Doe / juan quien</p>
+          <p>Algun dato adicional</p>
+          <address>
+            Escrito por
+            <a href="mailto:webmaster@example.com">El bryan</a>.<br />
+            Checale en:<br />
+            tepis.com<br />
+            aztecas 215, Tepito Barrio bravo<br />
+            MEXA CDMX
+          </address>
+        </header>
+      </article>
+      <article>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+          For 50 years, WWF has been protecting the future of nature. The
+          world's leading conservation organization, WWF works in 100 countries
+          and is supported by 1.2 million members in the United States and close
+          to 5 million globally.
+        </blockquote>
+      </article>
+    </section>
+    <!-- weird tags && stuff -->
+    <section>
+      <h3>Cosas raras section</h3>
+      <div>
+        <code>
+          for(let i =0; i< 100; i++){ console.log("debo hacer mi tarea de
+          diseño") }
+        </code>
+      </div>
+      <!-- este es bloque pero esta awesome -->
+      <div>
+        <p>This is some text.</p>
+
+        <p>This is some text.</p>
+        <dialog open>This is an open dialog window</dialog>
+        <p>This is some text.</p>
+
+        <p>This is some text.</p>
+      </div>
+      <div>
+        <h2>Tag BDI es una bidireccional input</h2>
+        <p>
+          In the example below, usernames are shown along with the number of
+          points in a contest. If the bdi element is not supported in the
+          browser, the username of the Arabic user would confuse the text (the
+          bidirectional algorithm would put the colon and the number "90" next
+          to the word "User" rather than next to the word "points").
+        </p>
+        <ul>
+          <li>User <bdi>hrefs</bdi>: 60 points</li>
+          <li>User <bdi>jdoe</bdi>: 80 points</li>
+          <li>User <bdi>إيان</bdi>: 90 points</li>
+        </ul>
+      </div>
+      <div>
+        <p>
+          <dfn
+            ><abbr title="HyperText Markup Language y ademas funciona"
+              >HTML</abbr
+            ></dfn
+          >
+          is the standard markup language for creating web pages.
+        </p>
+      </div>
+    </section>
+
+    <footer>Aca termina la pagina web</footer>
+  </body>
+</html>
