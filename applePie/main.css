@@ -78,7 +78,7 @@ section {
 }
 
 .bottomLine {
-  border-bottom: 30x solid var(--gray-x-11-gray);
+  border-bottom: 3px solid var(--gray-x-11-gray);
 }
 
 .recipeInfo {
@@ -100,7 +100,7 @@ section {
   padding: 0;
   width: 100%;
   min-height: 30rem;
-  background-image: url("./assets/images/apple-pie.jpg");
+  background: url("./assets/images/apple-pie.jpg");
   background-size: cover;
   display: flex;
   /*  esta deja que no se repita la imagen background-repeat: repeat; */
