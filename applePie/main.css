@@ -30,7 +30,7 @@ h6 {
 h1 {
   /* esta prop maneja el alineado */
   text-align: center;
-  color: var(--rojoTutube);
+  color: #fff;
   font-size: 5rem;
   font-family: "Roboto", sans-serif;
 }
@@ -67,4 +67,80 @@ ul li {
 
 .centered {
   /* pendiente por flexbox */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
+
+section {
+  margin: 30px 0;
+}
+
+.bottomLine {
+  border-bottom: 30x solid var(--gray-x-11-gray);
+}
+
+.recipeInfo {
+  width: 500px;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto 0 auto;
+  display: inherit;
+}
+
+/* recipies Hero custom section */
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 30rem;
+  background-image: url("./assets/images/apple-pie.jpg");
+  background-size: cover;
+  display: flex;
+  /*  esta deja que no se repita la imagen background-repeat: repeat; */
+}
+
+/* en la sensacion de estirar la pantalla hablando del width */
+/*   200px min-width  max-width 1024px */
+
+/*  debes de comenzar a desarrolalr en mobile first */
+/* version de phone  320px*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+  h1 {
+    color: red;
+  }
+}
+/* version desk mini 768px */
+@media (min-width: 767px) {
+  h1 {
+    color: green;
+    font-size: 7rem;
+  }
+}
+/* version de dektop full 1024px */
+@media (min-width: 1024px) {
+  h1 {
+    color: yellow;
+  }
+
+  recipeInfo {
+    width: 100%;
+  }
+}
+
+/* 
+.recipeInfo {
+  width: 500px;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto 0 auto;
+  display: inherit;
+}
+*/
