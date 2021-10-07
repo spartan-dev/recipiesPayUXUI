@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+@import url("./assets/fonts/Roboto-Light.ttf");
+* {
+  font-family: "Roboto-Light", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* variables */
+/* The :root selector allows you to target the highest-level “parent”  */
+:root {
+  --colorPrimario: #000000;
+  --colorSecundario: #fabfab;
+  --rojoTutube: #ff0000;
+  --english-violet: #654f6fff;
+  --smoky-black: #12130fff;
+  --ming: #246a73ff;
+  --gray-x-11-gray: #bfbdc1ff;
+  --burnt-sienna: #de6b48ff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* esta prop maneja el grosor de la fuente */
+  font-weight: bold;
+}
+
+h1 {
+  /* esta prop maneja el alineado */
+  text-align: center;
+  color: var(--rojoTutube);
+  font-size: 5rem;
+  font-family: "Roboto", sans-serif;
+}
+h2 {
+  margin: 0.5em 0 2em 0;
+}
+
+p {
+  /* esta prop da el tamaño de lineas */
+  font-size: 1.3em;
+  /* esta prop da el espacio de lineas */
+  line-height: 1.4em;
+}
+
+ul {
+  margin-bottom: 30px;
+}
+/* seleccionando todas las <li> que esten dentro de todas las <ul> */
+ul li {
+  padding: 5px;
+  /* esta prop le quita los puntos a las <li> */
+  list-style: none;
+  font-size: 1.3em;
+}
+
+/* Customizacion */
+
+.container {
+  /* esta prop me dice que no puedo pasar de maximo width */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em 10%;
+}
+
+.centered {
+  /* pendiente por flexbox */
+}

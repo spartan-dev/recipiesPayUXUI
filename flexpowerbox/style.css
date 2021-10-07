@@ -1,0 +1,37 @@
+/* Propiedades del flex:
+   flex-direction:row; / column
+   aplica con reverse
+   flex-wrap: wrap / nowrap / wrap-reverse
+   flex-flow : une flex-direction y flex-wrap
+   justify-content:
+   align-items:
+   align-content:
+  */
+
+/* 
+     flex-direction: row; este es el default 
+     flex-wrap: wrap; pasa debajo los hijo o cajas cuando ya no hay espacio 
+     esta es direction flex-wrap  
+     flex-flow: row nowrap; en una sola linea
+  */
+
+.flex-container {
+  background-color: burlywood;
+  padding: 10px;
+  border: 2px solid black;
+  height: 400px;
+  /* aca comienza el display flex */
+  display: flex; /* comienza con el display flex inicia/start */
+  align-content: stretch;
+}
+
+.flex-container div {
+  /* selector avanzado */
+  background-color: gainsboro;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border: 2px solid black;
+}
