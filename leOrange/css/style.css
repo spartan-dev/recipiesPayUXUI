@@ -114,7 +114,12 @@ input {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #fff;
-  border: none;
+  border-radius: 0px 0.25rem 0.25rem 0px;
+
+  border-top: 1px solid var(--leOrange);
+  border-right: 1px solid var(--leOrange);
+  border-bottom: 1px solid var(--leOrange);
+  border-left: none;
   color: var(--grayHover);
   margin-top: -1px;
   margin-right: -1px;
@@ -126,4 +131,152 @@ input {
   border: 1px solid var(--azulito);
   border-radius: 0px 0.25rem 0.25rem 0px;
   color: #fff;
+}
+
+section {
+  width: 20rem;
+}
+
+section p {
+  text-align: center;
+}
+section ul {
+  margin: 0 0 1rem 0;
+}
+
+.btn {
+  background: var(--fontsColorBase);
+  border-radius: 16px;
+  border: 0;
+  display: block;
+  height: 3.75rem;
+  width: 10rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--grayHover);
+}
+
+.btn a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section ul li {
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+section ul img {
+  margin-left: 0.25rem;
+}
+
+.app-store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rating {
+  margin: 0.5rem 0 0 0;
+}
+.rating p {
+  display: inline;
+  font-size: 0.75rem;
+}
+
+footer {
+  color: var(--grayHover);
+  font-weight: 700;
+  margin: 2.5rem auto 1rem auto;
+  text-align: center;
+}
+/* media query para tablet */
+@media screen and (min-width: 768px) {
+  main {
+    width: 32rem;
+  }
+  main #image {
+    background-image: url("../images/orange-search-engine-tablet.png");
+    height: 286px;
+    width: 25rem;
+  }
+  section {
+    width: 32rem;
+  }
+  ul {
+    padding: 9px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+/* Media query para desktop */
+@media screen and (min-width: 1200px) {
+  h1 {
+    text-align: left;
+  }
+  nav {
+    display: flex;
+    margin-bottom: 6rem;
+    width: 67rem;
+  }
+
+  nav #logo {
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul {
+    margin-left: auto;
+  }
+  main {
+    width: 32rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+  }
+
+  main #image {
+    background-image: url("../images/orange-search-engine-desktop.png");
+    width: 39rem;
+    height: 444px;
+    margin-bottom: 0;
+  }
+
+  section {
+    width: 32rem;
+  }
+  section p {
+    text-align: left;
+  }
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  section {
+    align-items: flex-start;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+  ul li {
+    padding: 4px;
+  }
+  .app-store {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .rating {
+    margin-left: 1rem;
+  }
 }
