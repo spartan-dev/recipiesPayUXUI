@@ -1,0 +1,129 @@
+/* este es párte de los estilos generales */
+
+:root {
+  --fondoWhite: #f8f8f8;
+  --fontsColorBase: #031d5b;
+  --leOrange: #f8765e;
+  --grayHover: #5b6c94;
+  --azulito: #9bdbe7;
+}
+body {
+  align-items: center;
+  background-color: var(--fondoWhite);
+  color: var(--fontsColorBase);
+  display: flex;
+  flex-direction: column;
+  font-family: "Encode Sans", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilos y navegacion */
+nav {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#logo {
+  color: var(--leOrange);
+  font-size: 26pt;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#logo img {
+  margin-right: 0.25rem;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li:not(:last-child) {
+  padding-right: 2rem;
+}
+
+nav li a {
+  color: var(--fontsColorBase);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: var(--grayHover);
+}
+
+/* Seccion Main */
+
+main {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #image {
+  height: 232px;
+  width: 20rem;
+  margin-bottom: 2rem;
+  display: block;
+  background-image: url("../images/orange-search-engine-phone.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form {
+  background-color: #fff;
+  border: 1px solid var(--leOrange);
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.152644);
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  width: 100%;
+}
+/* este haria referencia a todos los inputs */
+input {
+  background: rgba(0, 0, 0, 0);
+  color: var(--grayHover);
+  display: inline;
+  box-sizing: border-box;
+  height: 2.5rem;
+  font-weight: 700;
+}
+
+#search-field {
+  border: none;
+  border-radius: 0.25rem 0px 0px 0.25rem;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+#search-field::placeholder {
+  color: var(--grayHover);
+}
+
+#search-button {
+  background-image: url("../images/search-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border: none;
+  color: var(--grayHover);
+  margin-top: -1px;
+  margin-right: -1px;
+  width: 3.5rem;
+}
+#search-button:hover {
+  background-image: url("../images/search-icon-white.svg");
+  background-color: var(--azulito);
+  border: 1px solid var(--azulito);
+  border-radius: 0px 0.25rem 0.25rem 0px;
+  color: #fff;
+}
